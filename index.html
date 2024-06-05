@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nieuws Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <script src="trending.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">News Seeker</h1>
+        <div id="searchSection">
+            <input type="text" id="searchQuery" placeholder="Zoek naar nieuws...">
+            <button id="searchButton">Zoek</button>
+        </div>
+        <div id="filterSection">
+            <label for="filterDropdown">Filter: </label>
+            <select id="filterDropdown">
+                <option value="latest">Most recent</option>
+                <option value="oldest">Oldest</option>
+            </select>
+        </div>
+        <div id="newsContainer" class="grid"></div>
+        <h1 class="title">Trending Nieuws</h1>
+        <div id="trendingContainer" class="grid"></div>
+    </div>
+</body>
+</html>
